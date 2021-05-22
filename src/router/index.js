@@ -32,7 +32,7 @@ const Report = () => import(/* webpackChunkName: "Order_Report" */ '../component
 Vue.use(VueRouter)
 
 const router = new VueRouter({
-
+  mode: 'history',
   routes: [
     { path: '/', redirect: '/login' },
     { path: '/login', component: Login },
